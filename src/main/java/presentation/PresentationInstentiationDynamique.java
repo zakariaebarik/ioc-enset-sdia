@@ -9,8 +9,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
-public class Presentation2 {
-    public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+public class PresentationInstentiationDynamique {
+    public static void main(String[] args) throws Exception {
 
         // Injection des dépendances par instanciation dynamique
 
@@ -34,6 +34,6 @@ public class Presentation2 {
         // appliquer la méthode sur métier en passant dao en paramètres
         method.invoke(metier, dao);
 
-        System.out.println(metier.calcul());
+        System.out.println("Résultat : " +metier.calcul());
     }
 }

@@ -1,7 +1,6 @@
 package ext;
 
 import dao.IDao;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Repository("daoV3")

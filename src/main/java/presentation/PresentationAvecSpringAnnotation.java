@@ -10,6 +10,6 @@ public class PresentationAvecSpringAnnotation {
         ApplicationContext context = new AnnotationConfigApplicationContext("ext","metier","dao");
 
         IMetier metier = context.getBean(IMetier.class);
-        System.out.println(metier.calcul());
+        System.out.println("Résultat : " + metier.calcul());
     }
 }
